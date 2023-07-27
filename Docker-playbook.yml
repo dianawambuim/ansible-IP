@@ -9,3 +9,14 @@ tasks:
         - gnupg
       state: present
       update_catche: yes
+- name: Add Docker EPG key
+    ansible.builtin.apt_key:
+      url: https://download.docker.com/linux/debian/gpg
+      state: present
+
+ 
+
+  - name: Add Docker EPG key
+    ansible.builtin.apt_repository:
+      url: deb https://download.docker.com/linux/debian bullseye stable
+      state: present
