@@ -2,5 +2,5 @@ name: Running yolo containers
 hosts: all
 tasks:
 vars:
-  client_image: rugendoe/client-image:1.0.0
-  backend_image: rugendoe/backend-image:2.0.0
+  client_image: dmuchoki/client-image:2.0.0
+  backend_image: dmuchoki/backend-image:1.0.0
