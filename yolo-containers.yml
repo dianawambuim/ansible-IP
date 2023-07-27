@@ -12,3 +12,7 @@ vars:
       community.docker.docker-image:
       name: {{ backend_image }}
       source: pull
+- name: create folder
+       ansible.builtin.file:
+       path: /opt/yolo
+       state: directory
