@@ -1,0 +1,11 @@
+Install Docker
+hosts: all
+tasks:
+  - name: Installing packages
+    ansible.builtin.apt:
+      name:
+        - ca-certificates
+        - curl
+        - gnupg
+      state: present
+      update_catche: yes
