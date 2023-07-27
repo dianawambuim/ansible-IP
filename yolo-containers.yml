@@ -20,3 +20,5 @@ vars:
       ansible.builtin.template:
       src: ../docker-compose.yaml
       dest: "/opt/yolo/docker-compose.yaml"
+- name: start the container
+    shell: 'docker-compose up'
