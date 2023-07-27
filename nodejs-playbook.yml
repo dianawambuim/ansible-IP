@@ -6,7 +6,7 @@ tasks: 
       name: curl
       state: present
       update_cache: yes
-- name: Downlaod nodejs
+  - name: Downlaod nodejs
     shell: 'curl -sL https://deb.nodesource.com/setup_18.x'
   - name: Install nodejs
     ansible.builtin.apt:
