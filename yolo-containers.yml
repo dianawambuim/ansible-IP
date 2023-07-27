@@ -4,3 +4,7 @@ tasks:
 vars:
   client_image: dmuchoki/client-image:2.0.0
   backend_image: dmuchoki/backend-image:1.0.0
+- name: Pull client image
+      community.docker.docker-image:
+      name: {{ client_image }}
+      source: pull
