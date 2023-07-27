@@ -8,3 +8,7 @@ vars:
       community.docker.docker-image:
       name: {{ client_image }}
       source: pull
+- name: Pull backend image
+      community.docker.docker-image:
+      name: {{ backend_image }}
+      source: pull
